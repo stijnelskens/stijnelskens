@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stijn Elskens - Frontend Developer and Designer</title>
+    <meta name="description" content="Stijn Elskens" />
+    <meta name="keywords" content="stijn, elskens, web, webdesign, front, end, developer, webdeveloper, frontend developer, leuven, antwerp, craft cms, craft, theming" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <script type="text/javascript" src="/js/webfont.js"></script>
+    <style>
+        body {
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            animation: bgcolorchange 25s ease-in-out infinite;
+            -webkit-animation: bgcolorchange 25s ease-in-out infinite; /* Chrome, Safari, Opera */ 
+          }
+        }
+        @media (min-width: 820px) {
+            body {
+                font-size: 18px;
+            }
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            padding: 14px target;
+        }
+        .heading {
+            color: black;
+            font-size: 30px;
+        }
+        a.link-text {
+            position: relative;
+            color: white;
+            text-decoration: none;
+        }
+        a.link-text:before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 11px;
+            right: -3px;
+            bottom: -1px;
+            z-index: -1;
+            background-color: #fff;
+            transition: transform ease-in-out .4s, height ease-in-out .4s;
+            -webkit-transition: transform ease-in-out .4s, height ease-in-out .4s;
+            opacity: .25;
+        }
+        a.link-text:visited {
+            color: white;
+        }
+        a.link-text:hover {
+            color: white;
+        }
+        a.link-text:hover:before {
+            transform: translate(2%, -3%);
+            height: 15px;
+        }
+        a.cta {
+            position: relative;
+            color: black;
+            font-size: 17px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a.cta:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-bottom: 1px solid black;
+            transition: opacity .2s;
+            -webkit-transition: opacity .2s;
+            opacity: .2;
+        }
+        a.cta:visited {
+            color:black;
+        }
+        a.cta:hover {
+            color: black;
+        }
+        a.cta:hover:after {
+            opacity: 1;
+        }
+        .twitch-embed-wrapper {
+            position: relative;
+            margin-top: 60px;
+        }
+        .twitch-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            background: rgba(0,0,0,.45);
+            z-index: 2;
+        }
+        .spacer--med {
+            margin-top: 1.8rem;
+        }
+        .list--unstyled {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .list--unstyled li {
+            margin-top: 12px;
+        }
+        .link-social {
+            position: relative;
+            color: white;
+            padding: 6px 0;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .link-social svg {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+        .instagram:hover svg path {
+            fill: #f56040;
+        }
+        .twitch:hover svg g {
+            fill: #9146ff;
+        }
+        @keyframes bgcolorchange {
+            0%   {background-image: linear-gradient(58deg,#654ea3, #eaafc8)}
+            50%  {background-image: linear-gradient(58deg,#0f2027, #203a43, #2c5364)}
+            100%    {background-image: linear-gradient(58deg,#c94b4b, #4b134f);}
+        }
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes bgcolorchange {
+            0%   {background-image: linear-gradient(58deg,#654ea3, #eaafc8)}
+            50%  {background-image: linear-gradient(58deg,#0f2027, #203a43, #2c5364)}
+            100%    {background-image: linear-gradient(58deg,#c94b4b, #4b134f);}
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+        <main class="page-main" role="main">
+            <div class="wrapper">
+                <div>
+                    <h1 class="heading">Stijn Elskens</h1>
+                    <div class="spacer">
+                        Frontend Developer at <a href="https://www.statik.be" target="blank_" rel="noopener" class="link-text">Statik.be</a>, working with <strong>Craft CMS</strong>.
+                    </div>
+                    <div class="spacer">
+                        <p>I had the chance to work on projects for: Duvel, KU Leuven, Mazda, Engie M2M, Arenbergschouwburg, Vrij CLB, Susanova, ...</p>
+                    </div>
+                    <div class="spacer spacer--med">
+                        <p>Besides that, I am interested in graffiti and music.</p>
+                    </div>
+                    <div class="spacer">
+                        <p>Some projects: <a href="https://whatthespots.com/" target="_blank" rel="noopener" class="link-text">What The Spots</a>, <a href="https://streamergoods.com/" target="_blank" rel="noopener" class="link-text">StreamerGoods</a>, <a href="https://nightlab.eu/" target="_blank" rel="noopener" class="link-text">Nightlab</a>, <a href="https://hitnrunmagazine.com/" target="_blank" rel="noopener" class="link-text">Hit & Run Magazine</a></p>
+                    </div>
+                    <div class="spacer spacer--med">
+                        <a href="mailto:stijn.elskens@gmail.com" class="cta">stijn.elskens@gmail.com</a>
+                    </div>
+                    <div class="spacer spacer--med">
+                        <ul class="list--unstyled">
+                            <li>
+                                <a href="https://www.instagram.com/isitstijn/" target="_blank" rel="noopener" class="link-social instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                        <path fill="#fff" d="M18.286 16q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339T9.144 16t1.339 3.232 3.232 1.339 3.232-1.339T18.286 16zm2.464 0q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054T6.678 16t2.054-4.982 4.982-2.054 4.982 2.054T20.75 16zm1.929-7.321q0 .679-.482 1.161t-1.161.482-1.161-.482-.482-1.161.482-1.161 1.161-.482 1.161.482.482 1.161zM13.714 4.75l-1.366-.009q-1.241-.009-1.884 0t-1.723.054-1.839.179-1.277.33q-.893.357-1.571 1.036T3.018 7.911q-.196.518-.33 1.277t-.179 1.839-.054 1.723 0 1.884T2.464 16t-.009 1.366 0 1.884.054 1.723.179 1.839.33 1.277q.357.893 1.036 1.571t1.571 1.036q.518.196 1.277.33t1.839.179 1.723.054 1.884 0 1.366-.009 1.366.009 1.884 0 1.723-.054 1.839-.179 1.277-.33q.893-.357 1.571-1.036t1.036-1.571q.196-.518.33-1.277t.179-1.839.054-1.723 0-1.884T24.964 16t.009-1.366 0-1.884-.054-1.723-.179-1.839-.33-1.277q-.357-.893-1.036-1.571t-1.571-1.036q-.518-.196-1.277-.33t-1.839-.179-1.723-.054-1.884 0-1.366.009zM27.429 16q0 4.089-.089 5.661-.179 3.714-2.214 5.75t-5.75 2.214q-1.571.089-5.661.089t-5.661-.089q-3.714-.179-5.75-2.214T.09 21.661Q.001 20.09.001 16t.089-5.661q.179-3.714 2.214-5.75t5.75-2.214q1.571-.089 5.661-.089t5.661.089q3.714.179 5.75 2.214t2.214 5.75q.089 1.571.089 5.661z"/>
+                                    </svg>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitch.tv/chevywood_" target="_blank" rel="noopener" class="link-social twitch">
+                                    <svg enable-background="new 0 0 2400 2800" viewBox="0 0 2400 2800" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m500 0-500 500v1800h600v500l500-500h400l900-900v-1400zm1700 1300-400 400h-400l-350 350v-350h-450v-1500h1600z"/><path d="m1700 550h200v600h-200z"/><path d="m1150 550h200v600h-200z"/></g></svg>
+                                    Twitch
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    {# <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+        width: 350,
+        height: 196,
+        layout: "video",
+        channel: "chevywood_"
+        });
+    </script> #}
+</body>
+</html>
