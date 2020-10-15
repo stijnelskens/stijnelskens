@@ -12,7 +12,7 @@
         body {
             color: white;
             font-family: 'Source Sans Pro', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 300;
             animation: bgcolorchange 25s ease-in-out infinite;
             -webkit-animation: bgcolorchange 25s ease-in-out infinite; /* Chrome, Safari, Opera */ 
@@ -20,7 +20,7 @@
         }
         @media (min-width: 820px) {
             body {
-                font-size: 18px;
+                font-size: 20px;
             }
         }
         .wrapper {
@@ -135,23 +135,29 @@
         }
         @keyframes bgcolorchange {
             0%   {
+                -ms-filter: 'progid:DXImageTransform.Microsoft.Gradient(startColorStr="#654ea3", endColorStr="#eaafc8", GradientType=1)';
                 background-image: linear-gradient(58deg,#654ea3, #eaafc8);
-                -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#654ea3, endColorstr=#eaafc8)";
+                background-image: -webkit-linear-gradient(58deg,#654ea3, #eaafc8);
+                background-color: #654ea3;
             }
             50%  {
+                -ms-filter: 'progid:DXImageTransform.Microsoft.Gradient(startColorStr="#0f2027", endColorStr="#2c5364", GradientType=1)';
                 background-image: linear-gradient(58deg,#0f2027, #203a43, #2c5364);
-                -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0f2027, endColorstr=#2c5364)";
+                background-image: -webkit-linear-gradient(58deg,#0f2027, #203a43, #2c5364);
+                background-color: #2c5364;
             }
             100%    {
+                -ms-filter: 'progid:DXImageTransform.Microsoft.Gradient(startColorStr="#c94b4b", endColorStr="#4b134f", GradientType=1)';
                 background-image: linear-gradient(58deg,#c94b4b, #4b134f);
-                -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#c94b4b, endColorstr=#4b134f)";
+                background-image: -webkit-linear-gradient(58deg,#c94b4b, #4b134f);
+                background-color: #c94b4b;
             }
         }
         /* Chrome, Safari, Opera */
         @-webkit-keyframes bgcolorchange {
-            0%   {background-image: linear-gradient(58deg,#654ea3, #eaafc8)}
-            50%  {background-image: linear-gradient(58deg,#0f2027, #203a43, #2c5364)}
-            100%    {background-image: linear-gradient(58deg,#c94b4b, #4b134f);}
+            0%   {background-image: linear-gradient(58deg,#654ea3, #eaafc8); -ms-filter: 'progid:DXImageTransform.Microsoft.Gradient(startColorStr="#654ea3", endColorStr="#eaafc8", GradientType=1)';}
+            50%  {background-image: linear-gradient(58deg,#0f2027, #203a43, #2c5364); -ms-filter: 'progid:DXImageTransform.Microsoft.Gradient(startColorStr="#0f2027", endColorStr="#2c5364", GradientType=1)';}
+            100%    {background-image: linear-gradient(58deg,#c94b4b, #4b134f); -ms-filter: 'progid:DXImageTransform.Microsoft.Gradient(startColorStr="#c94b4b", endColorStr="#4b134f", GradientType=1)';}
         }
     </style>
 </head>
@@ -188,7 +194,7 @@
                             </li>
                             <li>
                                 <a href="https://www.twitch.tv/chevywood_" target="_blank" rel="noopener" class="link-social twitch">
-                                    <svg enable-background="new 0 0 2400 2800" viewBox="0 0 2400 2800" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m500 0-500 500v1800h600v500l500-500h400l900-900v-1400zm1700 1300-400 400h-400l-350 350v-350h-450v-1500h1600z"/><path d="m1700 550h200v600h-200z"/><path d="m1150 550h200v600h-200z"/></g></svg>
+                                    <svg viewBox="0 0 2400 2800" width="24" height="28" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m500 0-500 500v1800h600v500l500-500h400l900-900v-1400zm1700 1300-400 400h-400l-350 350v-350h-450v-1500h1600z"/><path d="m1700 550h200v600h-200z"/><path d="m1150 550h200v600h-200z"/></g></svg>
                                     Twitch
                                 </a>
                             </li>
@@ -198,17 +204,5 @@
             </div>
         </main>
     </div>
-    {# <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script type="text/javascript">
-        new Twitch.Embed("twitch-embed", {
-        width: 350,
-        height: 196,
-        layout: "video",
-        channel: "chevywood_"
-        });
-    </script> #}
 </body>
 </html>
